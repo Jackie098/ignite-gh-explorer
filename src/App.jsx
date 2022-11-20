@@ -1,7 +1,12 @@
+import { useState } from 'react';
 import { RepositoryList } from './components/RepositoryList';
 
 import './styles/global.scss';
 
 export function App() {
-  return <RepositoryList />
+  const [count, setCount] = useState(0);
+
+  return (<>
+    <RepositoryList />
+  </>)
 }
